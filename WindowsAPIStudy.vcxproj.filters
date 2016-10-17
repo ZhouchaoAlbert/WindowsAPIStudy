@@ -19,6 +19,9 @@
     <Filter Include="头文件\FriendUnit">
       <UniqueIdentifier>{10f8370f-f709-4f9c-bca1-f1e6ca64a880}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\String">
+      <UniqueIdentifier>{47ea79a4-f517-4092-9d77-99bd7cda1132}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -30,6 +33,9 @@
     <ClCompile Include="FriendUnitTest.cpp">
       <Filter>头文件\FriendUnit</Filter>
     </ClCompile>
+    <ClCompile Include="StdPtrArray.cpp">
+      <Filter>头文件\String</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CreateFile.h">
@@ -37,6 +43,9 @@
     </ClInclude>
     <ClInclude Include="FriendUnitTest.h">
       <Filter>头文件\FriendUnit</Filter>
+    </ClInclude>
+    <ClInclude Include="StdPtrArray.h">
+      <Filter>头文件\String</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

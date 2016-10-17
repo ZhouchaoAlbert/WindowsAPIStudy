@@ -81,10 +81,12 @@
     <ClCompile Include="CreateFile.cpp" />
     <ClCompile Include="FriendUnitTest.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="StdPtrArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CreateFile.h" />
     <ClInclude Include="FriendUnitTest.h" />
+    <ClInclude Include="StdPtrArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
