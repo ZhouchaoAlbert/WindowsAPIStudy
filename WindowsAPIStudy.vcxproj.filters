@@ -13,18 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\CreateFile">
+      <UniqueIdentifier>{f112436d-476f-445a-9a92-d58ea26b17b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\FriendUnit">
+      <UniqueIdentifier>{10f8370f-f709-4f9c-bca1-f1e6ca64a880}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CreateFile.cpp">
-      <Filter>头文件</Filter>
+      <Filter>头文件\CreateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendUnitTest.cpp">
+      <Filter>头文件\FriendUnit</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CreateFile.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\CreateFile</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendUnitTest.h">
+      <Filter>头文件\FriendUnit</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
