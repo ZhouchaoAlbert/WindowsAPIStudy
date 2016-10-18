@@ -103,12 +103,24 @@ bool CStdPtrArray::InsertAt(int iIndex, LPVOID pData)
 	{
 		int nAllocated = m_nAllocated * 2;
 		if (nAllocated == 0) nAllocated = 11;
-		LPVOID* ppVoid = static_cast<LPVOID*>(realloc(m_ppVoid, nAllocated * sizeof(LPVOID)));
-		if (ppVoid != NULL) {
-			m_nAllocated = nAllocated;
+		//LPVOID* ppVoid = static_cast<LPVOID*>(realloc(m_ppVoid, nAllocated * sizeof(LPVOID)));
+		if (NULL == m_ppVoid)
+		{
+			m_ppVoid = new LPVOID[nAllocated];
+		}
+		else
+		{
+			LPVOID* ppVoid = new LPVOID[nAllocated];
+			memcpy(ppVoid, m_ppVoid, m_nAllocated * sizeof(m_ppVoid));
+			delete[] m_ppVoid;
+			m_ppVoid = NULL;
 			m_ppVoid = ppVoid;
 		}
-		else 
+		if (m_ppVoid != NULL)
+		{
+			m_nAllocated = nAllocated;
+		}
+		else
 		{
 			--m_nCount;
 			return false;

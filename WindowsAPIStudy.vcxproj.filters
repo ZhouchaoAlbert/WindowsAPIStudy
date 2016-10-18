@@ -36,6 +36,15 @@
     <ClCompile Include="StdPtrArray.cpp">
       <Filter>头文件\String</Filter>
     </ClCompile>
+    <ClCompile Include="StdValArray.cpp">
+      <Filter>头文件\String</Filter>
+    </ClCompile>
+    <ClCompile Include="StdStringPtrMap.cpp">
+      <Filter>头文件\String</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiString.cpp">
+      <Filter>头文件\String</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CreateFile.h">
@@ -45,6 +54,15 @@
       <Filter>头文件\FriendUnit</Filter>
     </ClInclude>
     <ClInclude Include="StdPtrArray.h">
+      <Filter>头文件\String</Filter>
+    </ClInclude>
+    <ClInclude Include="StdValArray.h">
+      <Filter>头文件\String</Filter>
+    </ClInclude>
+    <ClInclude Include="StdStringPtrMap.h">
+      <Filter>头文件\String</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiString.h">
       <Filter>头文件\String</Filter>
     </ClInclude>
   </ItemGroup>
