@@ -2,6 +2,7 @@
 typedef void* LPVOID;
 typedef const void* LPCVOID;
 typedef unsigned char  *LPBYTE;
+
 class  CStdValArray
 {
 public:

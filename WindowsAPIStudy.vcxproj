@@ -79,6 +79,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CreateFile.cpp" />
+    <ClCompile Include="Delegate.cpp" />
     <ClCompile Include="DuiString.cpp" />
     <ClCompile Include="FriendUnitTest.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -88,8 +89,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CreateFile.h" />
+    <ClInclude Include="Delegate.h" />
     <ClInclude Include="DuiString.h" />
     <ClInclude Include="FriendUnitTest.h" />
+    <ClInclude Include="Singleton.h" />
     <ClInclude Include="StdPtrArray.h" />
     <ClInclude Include="StdStringPtrMap.h" />
     <ClInclude Include="StdValArray.h" />

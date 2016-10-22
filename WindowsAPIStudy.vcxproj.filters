@@ -22,6 +22,9 @@
     <Filter Include="头文件\String">
       <UniqueIdentifier>{47ea79a4-f517-4092-9d77-99bd7cda1132}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Delegate">
+      <UniqueIdentifier>{3ad17e69-f926-4014-a3b3-1df55782a3a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -45,6 +48,9 @@
     <ClCompile Include="DuiString.cpp">
       <Filter>头文件\String</Filter>
     </ClCompile>
+    <ClCompile Include="Delegate.cpp">
+      <Filter>头文件\Delegate</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CreateFile.h">
@@ -64,6 +70,12 @@
     </ClInclude>
     <ClInclude Include="DuiString.h">
       <Filter>头文件\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Delegate.h">
+      <Filter>头文件\Delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
