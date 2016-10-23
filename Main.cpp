@@ -11,6 +11,7 @@ using namespace ATL;
 #include "StdStringPtrMap.h"
 #include "Delegate.h"
 #include "Singleton.h"
+#include "UIMarkup.h"
 
 
 bool FunctionTest(void*)
@@ -182,8 +183,45 @@ public:
 	}
 };
 
+void Parse(CMarkupNode* pRoot)
+{
+	for (CMarkupNode node = pRoot->GetChild(); node.IsValid(); node = node.GetSibling())
+	{
+		LPCTSTR pstrClass = node.GetName();
+		// Add children
+		if (node.HasChildren())
+		{
+			Parse(&node);
+		}
+
+		// Process attributes
+		if (node.HasAttributes())
+		{
+			// Set ordinary attributes
+			int nAttributes = node.GetAttributeCount();
+			for (int i = 0; i < nAttributes; i++)
+			{
+				LPCTSTR pstrName  = node.GetAttributeName(i);
+				LPCTSTR pstrValue = node.GetAttributeValue(i);
+			}
+		}
+	}
+
+}
 int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow)
 {
+	UINT32 I = sizeof(ULONG);
+	CString strFilePath;
+	strFilePath = _T("C:\\Users\\Administrator\\Desktop\\MiniQQ\\Output\\Resource\\xml\\LoginFrame.xml");
+
+	CMarkup m_xml;
+	m_xml.LoadFromFile(strFilePath);
+
+	CMarkupNode root = m_xml.GetRoot();
+	
+	Parse(&root);
+	
+
 	//CDelegateStatic th(FunctionTest);	
 	//th(nullptr);
 // 	ClsA a;

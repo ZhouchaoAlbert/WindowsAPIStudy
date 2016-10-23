@@ -86,8 +86,10 @@
     <ClCompile Include="StdPtrArray.cpp" />
     <ClCompile Include="StdStringPtrMap.cpp" />
     <ClCompile Include="StdValArray.cpp" />
+    <ClCompile Include="UIMarkup.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseDefine.h" />
     <ClInclude Include="CreateFile.h" />
     <ClInclude Include="Delegate.h" />
     <ClInclude Include="DuiString.h" />
@@ -96,6 +98,7 @@
     <ClInclude Include="StdPtrArray.h" />
     <ClInclude Include="StdStringPtrMap.h" />
     <ClInclude Include="StdValArray.h" />
+    <ClInclude Include="UIMarkup.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
